@@ -10,6 +10,10 @@
 		F75A27AC1DA468AC005D1AEE /* Community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75A27A21DA468AC005D1AEE /* Community.framework */; };
 		F75A27B11DA468AC005D1AEE /* CommunityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A27B01DA468AC005D1AEE /* CommunityTests.swift */; };
 		F75A27B31DA468AC005D1AEE /* Community.h in Headers */ = {isa = PBXBuildFile; fileRef = F75A27A51DA468AC005D1AEE /* Community.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75A27BD1DA468C3005D1AEE /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A27BC1DA468C2005D1AEE /* Member.swift */; };
+		F75A27BF1DA46921005D1AEE /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A27BE1DA46921005D1AEE /* Group.swift */; };
+		F75A27C11DA46E92005D1AEE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A27C01DA46E92005D1AEE /* Post.swift */; };
+		F75A27C31DA46FD2005D1AEE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A27C21DA46FD2005D1AEE /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		F75A27AB1DA468AC005D1AEE /* CommunityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommunityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75A27B01DA468AC005D1AEE /* CommunityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTests.swift; sourceTree = "<group>"; };
 		F75A27B21DA468AC005D1AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75A27BC1DA468C2005D1AEE /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Member.swift; path = ../Member.swift; sourceTree = "<group>"; };
+		F75A27BE1DA46921005D1AEE /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		F75A27C01DA46E92005D1AEE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F75A27C21DA46FD2005D1AEE /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 		F75A27A41DA468AC005D1AEE /* Community */ = {
 			isa = PBXGroup;
 			children = (
+				F75A27BE1DA46921005D1AEE /* Group.swift */,
+				F75A27BC1DA468C2005D1AEE /* Member.swift */,
+				F75A27C01DA46E92005D1AEE /* Post.swift */,
+				F75A27C21DA46FD2005D1AEE /* Event.swift */,
 				F75A27A51DA468AC005D1AEE /* Community.h */,
 				F75A27A61DA468AC005D1AEE /* Info.plist */,
 			);
@@ -149,6 +161,7 @@
 					F75A27A11DA468AC005D1AEE = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6EFGV8H972;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					F75A27AA1DA468AC005D1AEE = {
@@ -198,6 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75A27C31DA46FD2005D1AEE /* Event.swift in Sources */,
+				F75A27BD1DA468C3005D1AEE /* Member.swift in Sources */,
+				F75A27C11DA46E92005D1AEE /* Post.swift in Sources */,
+				F75A27BF1DA46921005D1AEE /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +339,7 @@
 		F75A27B71DA468AC005D1AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
@@ -334,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.greybeard.Community;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +360,7 @@
 		F75A27B81DA468AC005D1AEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
@@ -360,6 +380,7 @@
 		F75A27BA1DA468AC005D1AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
 				INFOPLIST_FILE = CommunityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +393,7 @@
 		F75A27BB1DA468AC005D1AEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
 				INFOPLIST_FILE = CommunityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
